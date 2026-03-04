@@ -1,116 +1,72 @@
-PRÁCTICA 2 — Auditoría y Corrección Profesional (Bootstrap)
+# PRÁCTICA 2 — Auditoría y Corrección Profesional (Bootstrap)
 
-Objetivo
-En esta práctica recibirás una plantilla con errores intencionales.
-Tu trabajo será analizar, detectar y corregir los problemas para transformar la página en una landing profesional usando Bootstrap.
-Esta práctica simula una situación real donde un desarrollador recibe código con errores y debe auditarlo y mejorarlo.
+## 🎯 Objetivo
+Recibirás una plantilla con errores. Debes **auditar**, **corregir** y **profesionalizar** la página usando Bootstrap.
 
+---
 
-Errores intencionales incluidos
-El código contiene varios problemas comunes en proyectos web.
+## 🧩 Errores intencionales que debes detectar (hay varios)
+Ejemplos (no son los únicos):
+- Imagen sin `img-fluid`
+- `href="#"` sin funcionalidad
+- Cards sin `h-100` (alturas disparejas)
+- Navbar sin `collapse` correcto (toggler no abre)
+- Sin spacing (se ve “pegado”)
+- Columnas mal distribuidas (ej. 5 + 8)
+- Falta viewport (responsive falla)
 
-Algunos ejemplos son:
+---
 
-Imágenes sin img-fluid
-Links con href="#" sin funcionalidad
-Navbar que no colapsa correctamente
-Cards con alturas inconsistentes
-Falta de espaciado visual
-Grid mal construido (columnas que no suman 12)
-Falta del meta viewport
-Navegación que no lleva a secciones reales
+## ✅ Lo que debes lograr (Checklist)
+### 1) Navbar profesional y funcional
+- Debe tener: `container`, `navbar-brand`, `navbar-toggler`, `collapse`
+- Los links deben navegar a secciones reales: `#sobre-mi`, `#proyectos`, `#contacto`
+- Debe funcionar en móvil (hamburguesa)
 
-Tu trabajo será detectarlos y corregirlos.
+### 2) Responsive real (Mobile First)
+- Asegura que exista `meta viewport`
+- Usa estrategia de columnas: `col-12 col-md-* col-lg-*` cuando aplique
 
-Lo que debes mejorar
+### 3) Grid coherente (12 columnas)
+- Corrige el bloque que tiene `5 + 8` (debe sumar 12 o usar `col` automático)
+- Debe verse correcto en móvil y en escritorio
 
-1️⃣ Navbar funcional
+### 4) Jerarquía visual (diseño profesional)
+En las cards de Proyectos aplica:
+- Imagen → llama atención
+- Título → informa
+- Texto → explica
+- Botón → acción
 
-Debes asegurar que:
-El botón hamburguesa funcione
-La navegación apunte a secciones reales:
-#sobre-mi
-#proyectos
-#contacto
+### 5) Cards consistentes
+- Todas deben tener misma altura: `h-100`
+- Sombra ligera: `shadow-sm`
+- Espaciado entre columnas: `g-4`
 
-El navbar funcione correctamente en pantallas móviles
+### 6) Navegación real (UX)
+- Nada de `href="#"`
+- Opcional recomendado: `scroll-behavior: smooth;`
 
-2️⃣ Grid correcto
-Recuerda que Bootstrap funciona con un sistema de 12 columnas.
+---
 
-Debes corregir cualquier combinación incorrecta como:
-col-md-5 + col-md-8
+## 🧪 Evaluación (rubrica)
+Se evalúa:
+- **Criterio** (detectas y justificas cambios)
+- **Coherencia** (grid correcto, secciones ordenadas)
+- **Uso correcto de clases** (Bootstrap, no “parches”)
+- **Limpieza** (HTML claro, indentación, sin basura)
 
-3️⃣ Responsive real
-La página debe verse correctamente en:
+---
 
-📱 móvil
-💻 laptop
-🖥 escritorio
+## 📌 Entrega (obligatorio)
+1. Realiza cambios hasta que la página se vea profesional.
+2. Haz commit final con este mensaje EXACTO:
 
-Debes asegurar:
-meta viewport
-uso correcto de col-, col-md-, col-lg-
+**Practica 2: auditoria y correccion profesional**
 
-4️⃣ Cards profesionales
-En la sección de proyectos debes:
+> Nota: si haces varios commits durante el proceso, está bien, pero el último debe tener ese mensaje.
 
-hacer que todas tengan misma altura (h-100)
-agregar separación entre columnas (g-4)
-aplicar jerarquía visual
+---
 
-Jerarquía recomendada:
-Imagen → llama la atención
-Título → informa
-Texto → explica
-Botón → acción
-
-5️⃣ Navegación correcta
-No deben existir enlaces sin función.
-
-Ejemplo incorrecto:
-href="#"
-Debe apuntar a secciones reales de la página.
-
-🧪 Criterios de evaluación
-Se evaluará:
-✔ Criterio técnico
-Capacidad para detectar errores reales en el código.
-
-✔ Uso correcto de Bootstrap
-Aplicación correcta de:
-
-Grid
-spacing
-utilidades
-responsive design
-
-✔ Coherencia visual
-La página debe verse ordenada, clara y profesional.
-
-✔ Limpieza del código
-Se evaluará:
-
-indentación
-organización
-claridad del HTML
-
-📦 Entrega
-
-La entrega se realiza directamente en este repositorio generado por GitHub Classroom.
-Debes realizar al menos un commit final con el mensaje EXACTO:
-
-Practica 2: auditoria y correccion profesional
-Consejo importante
-
-Bootstrap es un sistema de diseño, no solo decoración.
-Evita solucionar problemas con CSS si Bootstrap ya ofrece la clase correcta.
-
-Usa principalmente:
-Grid
-utilities
-spacing
-clases responsivas
-
-Objetivo final
-Transformar esta plantilla con errores en una landing clara, funcional y profesional.
+## 🧠 Consejo
+Bootstrap es sistema, no decoración. Si lo arreglas con CSS en lugar de clases, pierdes puntos.
