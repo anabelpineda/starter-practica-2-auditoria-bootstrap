@@ -96,6 +96,7 @@ organización
 claridad del HTML
 
 📦 Entrega
+
 La entrega se realiza directamente en este repositorio generado por GitHub Classroom.
 Debes realizar al menos un commit final con el mensaje EXACTO:
 
