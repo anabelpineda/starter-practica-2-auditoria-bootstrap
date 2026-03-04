@@ -23,6 +23,7 @@ Navegación que no lleva a secciones reales
 Tu trabajo será detectarlos y corregirlos.
 
 Lo que debes mejorar
+
 1️⃣ Navbar funcional
 
 Debes asegurar que:
